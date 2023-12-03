@@ -2,9 +2,10 @@ import PhoneImg from "../../public/smart phone.jpg";
 import CameraImg from "@/public/camera.jpg";
 import HeadsetImg from "@/public/headset.jpg";
 import GraphicCardImg from "@/public/graphic card.jpg";
+import { StaticImageData } from "next/image";
 
 interface blogType {
-  img: string;
+  img: StaticImageData;
   title: string;
   slug: string;
   description: string;
@@ -16,7 +17,7 @@ export const BlogData: blogType[] = [
     title: "Smart Phone",
     slug: "SmartPhone",
     description:
-      "One of the leading smart phone in the entire world for sale just for 5k$",
+      "One of the leading smart phone in the entire world for sale just for 5k$.",
   },
   {
     img:CameraImg,
